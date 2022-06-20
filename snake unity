@@ -8,16 +8,16 @@ private Vector2 _direction = Vector2.right;
 
 private void update()
 {
-    if(Input.GetKeyDown(KeyCode.W)){
+    if(Input.GetKeyDown(KeyCode.W)||Input.GetKeyDown("up")){
         _direction = Vector2.up;
     }
-    else if(Input.GetKeyDown(KeyCode.S)){
+    else if(Input.GetKeyDown(KeyCode.S)||Input.GetKeyDown("down")){
         _direction = Vector2.down;
     }
-    else if(Input.GetKeyDown(KeyCode.A)){
+    else if(Input.GetKeyDown(KeyCode.A)||Input.GetKeyDown("left")){
         _direction = Vector2.left;
     }
-    else if(Input.GetKeyDown(KeyCode.D)){
+    else if(Input.GetKeyDown(KeyCode.D)||Input.GetKeyDown("right")){
         _direction = Vector2.right;
     }
 }
